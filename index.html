@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Default view of Dark Mode -->
+<html color-mode="dark" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Karlee Lewis</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+  <!-- change to light mode if user prefers light mode -->
+  <script>
+    let currentMode = localStorage.getItem("color-mode");
+
+    if (currentMode === "light") || (window.matchMedia('(prefers-color-scheme: light)').matches && !currentMode) {
+      document.documentElement.setAttribute("color-mode", "light")
+    };
+  </script>
+</head>
+
+<body>
+  <!-- Top Container -->
+  <div class="top-container">
+    <label class="toggle-control">
+      <input class="toggle-control mode-toggle-btn" type="checkbox">
+      <span class="control"></span>
+    </label>
+    <img class="moon dark--hidden" src="images/001-sun.png" alt="cloud-img">
+    <img class="moon light--hidden" src="images/002-full-moon.png" alt="cloud-img">
+    <h1>I'm Karlee.</h1>
+    <h2 class="sub-title">an aspiring developer</h2>
+    <img class="top-cloud light--hidden" src="images/cloud-dark.png" alt="cloud-img">
+    <img class="top-cloud dark--hidden" src="images/cloud-light.png" alt="cloud-img">
+    <img class="mountains light--hidden" src="images/mountains-dark.png" alt="mountain-img">
+    <img class="mountains dark--hidden" src="images/mountains-light.png" alt="mountain-img">
+    <img class="bottom-cloud light--hidden" src="images/cloud-dark.png" alt="cloud-img">
+    <img class="bottom-cloud dark--hidden" src="images/cloud-light.png" alt="cloud-img">
+  </div>
+  <!-- Middle Container -->
+  <div class="middle-container">
+    <div class="profile skill-row">
+      <img class="profile-pic" src="images/Profile.jpg" alt="Profile-pic">
+      <h2>Hello.</h2>
+      <div class="about-me">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      </div>
+    </div>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="skill-row">
+      <img class="scrum-img" src="images/001-scrum.png" alt="scrum-img">
+      <h3>Scrum</h3>
+      <p>Scrum Master certification achieved in November of 2019 through Scrum.org VestibulumLorem
+        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum. egestas nunc lectus, in accumsan nulla maximus a. Donec et velit
+        ion achieved in November of 2019 through Scrum.org VestibulumLorem
+        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deseruntsollicitudin, sodales justo at, vestibulum orci. Etiam malesuada</p>
+    </div>
+    <div class="skill-row">
+      <img class="code-img" src="images/001-coding.png" alt="coding-img">
+      <h3>Web Development</h3>
+      <p>Ability to take an idea and flesh it out from a concept, to a fully functional webpage.Vivamus sed ipsum vitae justo faucibus tincidunt. Duis semper eleifend ex id porta. Nullam molestie ornare auctor. Nunc non turpis varius nulla molestie
+        laoreet. Duis ornare malesuada urna, a gravida ex suscipit id. Quisque at urna eget arcu aliquet cursus in quis nunc. Etiam aliquet orci eget erat imperdiet finibus. Fusce dignissim tristique vulputat </p>
+    </div>
+  </div>
+  <!-- Contact Container -->
+  <div class="contact-me">
+    <hr class="sub-title">
+    <h2 class="sub-title">Get In Touch</h2>
+    <h3>I'm currently looking for a junior developer role</h3>
+    <p class="contact-message">I have extensive experience in HelpDesk and IT solutions. sed ipsum vitae justo faucibus tincidunt. Duis semper eleifend ex id porta. Nullam molestie ornare auctor. Nunc non turpis varius nulla molestie laoreet. Duis
+      ornare malesuada urna, a gravida ex suscipit id. </p>
+    <a class="BUTTON_QIH" href="mailto:karlee.lewis010@gmail.com">CONTACT ME</a>
+  </div>
+  <!-- Bottom Container -->
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/karlee-lewis-385086198/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/Karlee-lewis">Github</a>
+    <p class="copyright">© 2021 Karlee Lewis.</p>
+  </div>
+  <script src="persona.js" charset="utf-8"></script>
+</body>
+
+</html>
