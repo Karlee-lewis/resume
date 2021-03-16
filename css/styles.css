@@ -117,8 +117,8 @@ p {
 
 .profile-pic {
   float: left;
-  border-radius: 50%;
-  width: 20%;
+  border-radius: 100%;
+  width: 30%;
   margin-right: 30px;
   padding-bottom: 30px;
 }
