@@ -81,6 +81,56 @@ p {
   line-height: 2;
 }
 
+/********** Mode Toggle Button ***********/
+.toggle-control {
+  display: block;
+  position: absolute;
+  right: 17%;
+  top: 7%;
+  padding-left: 100px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.toggle-control input:checked ~ .control {
+  background-color: #fbaccc;
+}
+.toggle-control input:checked ~ .control:after {
+  left: 55px;
+}
+.toggle-control .control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100px;
+  border-radius: 25px;
+  background-color: #056674;
+  transition: background-color 0.15s ease-in;
+}
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background: white;
+  transition: left 0.15s ease-in;
+}
+
 /************Top Container**********/
 .top-container {
   background-color: var(--base-theme);
@@ -90,8 +140,10 @@ p {
 
 .top-cloud {
   position: absolute;
-  right: 20%;
-  top: 40%;
+
+  right: 17%;
+  top: 45%;
+
   width: 10%;
 }
 
@@ -99,7 +151,7 @@ p {
   position: absolute;
   left: 20%;
   top: 5%;
-  width: 8%;
+  width: 10%;
 }
 
 .sun {
@@ -112,7 +164,7 @@ p {
 .bottom-cloud {
   position: absolute;
   left: 15%;
-  bottom: 25%;
+  bottom: 30%;
   width: 10%;
 }
 
@@ -249,3 +301,4 @@ p {
 }
 
 /* Center the control */
+
