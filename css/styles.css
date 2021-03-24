@@ -140,8 +140,10 @@ p {
 
 .top-cloud {
   position: absolute;
+
   right: 17%;
   top: 45%;
+
   width: 10%;
 }
 
@@ -150,6 +152,13 @@ p {
   left: 20%;
   top: 5%;
   width: 10%;
+}
+
+.sun {
+  position: absolute;
+  left: 18%;
+  top: 2%;
+  width: 12%;
 }
 
 .bottom-cloud {
@@ -161,6 +170,13 @@ p {
 
 .mountains {
   vertical-align: bottom;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  z-index: 9999;
 }
 
 /***********Next section*********/
@@ -233,3 +249,56 @@ p {
   background-color: var(--bottom-theme);
   padding: 50px 0 20px;
 }
+
+/* DarkMode / LightMode Toggle */
+.toggle-control {
+  display: block;
+  position: absolute;
+  right: 320px;
+  top: 100px;
+  padding-left: 100px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.toggle-control input:checked ~ .control {
+  background-color: #fbaccc;
+}
+.toggle-control input:checked ~ .control:after {
+  left: 55px;
+}
+.toggle-control .control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100px;
+  border-radius: 25px;
+  background-color: #056674;
+  transition: background-color 0.15s ease-in;
+}
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background: white;
+  transition: left 0.15s ease-in;
+}
+
+/* Center the control */
+
