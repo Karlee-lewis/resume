@@ -6,16 +6,20 @@
   --base-theme: #ece2e1;
   --middle-theme: #fbaccc;
   --bottom-theme: #949AA6;
+  --card-color: #FFF;
   --text-base: #130f1f;
   --text-high: #FFF;
+  --drop-shadow: rgba(0, 0, 0, 0.2);
 }
 
 :root[color-mode="dark"] {
   --base-theme: #283149;
   --middle-theme: #130F1F;
   --bottom-theme: #303540;
+  --card-color: #303540;
   --text-base: #EDEDED;
   --text-high: #66bfbf;
+  --drop-shadow: rgba(0, 0, 0, 0.4);
 }
 /* Any element with this class will be hidden in light mode */
 :root[color-mode="light"] .light--hidden {
@@ -27,6 +31,10 @@
 }
 
 /* HTML Tags */
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: #f8f1f1;
   font-family: 'Montserrat', sans-serif;
@@ -164,7 +172,14 @@ p {
   vertical-align: bottom;
 }
 
+
 /***********Next section*********/
+.middle-container {
+  background-color: var(--middle-theme);
+  color: var(--text-base);
+  padding: 50px 0 100px;
+  width: auto;
+}
 
 .profile-pic {
   float: left;
@@ -179,22 +194,48 @@ p {
   text-align: left;
 }
 
-/***********Next section*********/
-.middle-container {
-  background-color: var(--middle-theme);
-  color: var(--text-base);
-  padding: 50px 0 100px;
-  width: auto;
-}
-
 .intro {
   width: 30%;
   margin: auto;
 }
+
+.intro-text {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+
+/***********Next section*********/
 .skills {
   width: 70%;
   margin: 100px auto 100px auto;
 }
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 var(--drop-shadow); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: var(--card-color);
+}
+
 /* Next Section */
 .skill-row {
   width: 50%;
