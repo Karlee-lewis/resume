@@ -136,6 +136,7 @@ p {
   background-color: var(--base-theme);
   position: relative;
   padding: 100px 100px 0;
+  width: auto;
 }
 
 .top-cloud {
@@ -183,6 +184,7 @@ p {
   background-color: var(--middle-theme);
   color: var(--text-base);
   padding: 50px 0 100px;
+  width: auto;
 }
 
 .intro {
@@ -216,6 +218,7 @@ p {
 .contact-me {
   background-color: var(--base-theme);
   padding: 10px 0 100px;
+  width: auto;
 }
 
 .contact-message {
@@ -232,4 +235,5 @@ p {
 .bottom-container {
   background-color: var(--bottom-theme);
   padding: 50px 0 20px;
+  width: auto;
 }
