@@ -1,5 +1,4 @@
 /************TAG SELECTORS*************/
-
 /* CSSLint scss*/
 /* Light Mode */
 :root[color-mode="light"] {
@@ -21,10 +20,12 @@
   --text-high: #66bfbf;
   --drop-shadow: rgba(0, 0, 0, 0.4);
 }
+
 /* Any element with this class will be hidden in light mode */
 :root[color-mode="light"] .light--hidden {
   display: none;
 }
+
 /* Any element with this class will be hidden in dark mode */
 :root[color-mode="dark"] .dark--hidden {
   display: none;
@@ -50,7 +51,7 @@ body {
   color: var(--text-base);
   margin: 0;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 h1 {
@@ -61,7 +62,7 @@ h1 {
   height: 110px;
 }
 
-h2.sub-title {
+.sub-title {
   color: #66bfbf;
 }
 
@@ -91,7 +92,9 @@ ul {
   padding: 2%;
 }
 
-
+li {
+  padding-left: 2%
+}
 
 hr {
   border: dotted var(--text-high) 15px;
@@ -115,10 +118,11 @@ p {
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
 .toggle-control input {
   position: absolute;
   opacity: 0;
@@ -126,12 +130,15 @@ p {
   height: 0;
   width: 0;
 }
-.toggle-control input:checked ~ .control {
+
+.toggle-control input:checked~.control {
   background-color: #fbaccc;
 }
-.toggle-control input:checked ~ .control:after {
+
+.toggle-control input:checked~.control:after {
   left: 55px;
 }
+
 .toggle-control .control {
   position: absolute;
   top: 0;
@@ -142,6 +149,7 @@ p {
   background-color: #056674;
   transition: background-color 0.15s ease-in;
 }
+
 .toggle-control .control:after {
   content: "";
   position: absolute;
@@ -187,7 +195,6 @@ p {
   vertical-align: bottom;
 }
 
-
 /***********Next section*********/
 .middle-container {
   background-color: var(--middle-theme);
@@ -220,12 +227,12 @@ p {
   text-align: left;
 }
 
-
 /***********Next section*********/
 .skills {
-  width: 70%;
-  margin: 100px auto 100px auto;
+  width: 65%;
+  margin: 150px auto 100px auto;
 }
+
 /* Float four columns side by side */
 .column {
   float: left;
@@ -234,7 +241,9 @@ p {
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -245,7 +254,8 @@ p {
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 var(--drop-shadow); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 var(--drop-shadow);
+  /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
   background-color: var(--card-color);
@@ -291,4 +301,85 @@ p {
   background-color: var(--bottom-theme);
   padding: 50px 0 20px;
   width: auto;
+}
+
+/*************Hobbies Page**************/
+.image-container {
+  position: relative;
+  background-color: var(--middle-theme);
+  color: var(--text-base);
+  padding: 50px 0 100px;
+  width: auto;
+}
+
+.my-slides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: fixed;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.gallery {
+  width: 70%;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: #FFF;
+}
+
+.image-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image-column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }

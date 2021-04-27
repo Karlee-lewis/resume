@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Default view of Dark Mode -->
+<html color-mode="dark" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Karlee Lewis</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+  <!-- change to light mode if user prefers light mode -->
+  <script>
+    let currentMode = localStorage.getItem("color-mode");
+
+    if (currentMode === "light") || (window.matchMedia('(prefers-color-scheme: light)').matches && !currentMode) {
+      document.documentElement.setAttribute("color-mode", "light")
+    };
+  </script>
+</head>
+
+<body>
+  <!-- Top Container -->
+  <div class="top-container">
+    <label class="toggle-control">
+      <input class="toggle-control mode-toggle-btn" type="checkbox">
+      <span class="control"></span>
+    </label>
+    <!-- Insert Header Name -->
+  </div>
+  <!-- Middle Container -->
+  <div class="middle-container">
+    <div class="skill-row">
+      <img class="scrum-img dark--hidden" src="images/scrum-light.png" alt="scrum-img">
+      <img class="scrum-img light--hidden" src="images/scrum-dark.png" alt="scrum-img">
+
+
+      <h3>"You mean like, Monopoly? Or Clue?" -most people</h3>
+      <p>I have recently been lured into the world of board games. My collection is growing and I have definitely gone all in. My favorites include: 7 Wonders Duel, Valeria Card Kingdoms, and Clank!</p>
+
+      <p>I would love to venture into Table Top RPG's and have amassed waaaaay too many source books. I'm most excited by DND 5e,
+        Pendragon, and Legend of the Five Rings.</p>
+    </div>
+    <div class="skill-row">
+      <img class="code-img dark--hidden" src="images/webdev-light.png" alt="coding-img">
+      <img class="code-img light--hidden" src="images/webdev-dark.png" alt="coding-img">
+      <h3>"Never tell me the odds!"- Han Solo, Empire Strikes Back</h3>
+      <p>I guess you could say I am a nerd. I love video games, Star Wars, The MCU, Lord of The Rings, and comics. I'm a fan of Image comics (Saga, Descender, Spawn), and generally prefer Marvel
+        (X-men, Deadpool, Spiderman) over DC (I have a fondness for Batman).</p>
+      <!-- INSERT Link to EJS page detailing server  -->
+    </div>
+    <div class="skill-row">
+
+      <img class="scrum-img dark--hidden" src="images/scrum-light.png" alt="scrum-img">
+      <img class="scrum-img light--hidden" src="images/scrum-dark.png" alt="scrum-img">
+
+      <h3>Art</h3>
+      <p> I also love to do art featuring my favorite characters or themes.</p>
+      <p>I like using different mediums. My favorites are acrylic on canvas or board, pen and ink, and watercolor. One of my favorite projects was a 4ft by 5ft landscape painting I did as a christmas gift for my folks.
+      </p>
+      <p><a href="art.html">Art Gallery</a></p>
+
+      </div>
+    </div>
+    <!-- Contact Container -->
+    <div class="contact-me">
+      <hr class="sub-title">
+      <h2 class="sub-title">Get In Touch</h2>
+      <div class="skill-row">
+
+        <a class="dark--hidden" href="mailto:karlee.lewis010@gmail.com"><img class="code-img" src="images/contactme-light.png" alt="Contact Me"></a>
+        <a class="light--hidden" href="mailto:karlee.lewis010@gmail.com"><img class="code-img" src="images/contactme.png" alt="Contact Me"></a>
+        <h3>I am currently looking for a junior developer role</h3>
+        <p class="contact-message">I'm willing and capable of learning new technologies and languages. I fully expect to spend time learning the code stack and filling any gaps in knowledge to better contribute to a team. While I may not have
+          explicit software developer experience in the professional sense, I am confident that I could contribute to an agile team in a relatively short
+          period of time. <a href="mailto:karlee.lewis010@gmail.com">Contact me. </a> </p>
+      </div>
+    </div>
+    <!-- Bottom Container -->
+    <div class="bottom-container">
+      <a class="footer-link" href="mailto:karlee.lewis010@gmail.com">Contact Me</a>
+      <!-- href="/files/resume.pdf" download="KarleeLewisResume.pdf" -->
+      <a class="footer-link" href="#">Download Resume</a>
+      <a class="footer-link" href="https://github.com/Karlee-lewis">Github</a>
+      <a class="footer-link" href="https://www.linkedin.com/in/karlee-lewis-385086198/">LinkedIn</a>
+      <a class="footer-link" href="index.html">Home</a>
+      <p class="copyright">© 2021 Karlee Lewis.</p>
+    </div>
+    <script src="persona.js" charset="utf-8"></script>
+</body>
+
+</html>
