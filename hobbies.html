@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Default view of Dark Mode -->
+<html color-mode="dark" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Karlee Lewis</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+  <!-- change to light mode if user prefers light mode -->
+  <script>
+    let currentMode = localStorage.getItem("color-mode");
+
+    if (currentMode === "light") || (window.matchMedia('(prefers-color-scheme: light)').matches && !currentMode) {
+      document.documentElement.setAttribute("color-mode", "light")
+    };
+  </script>
+</head>
+
+<body>
+  <!-- Top Container -->
+  <div class="top-container">
+    <label class="toggle-control">
+      <input class="toggle-control mode-toggle-btn" type="checkbox">
+      <span class="control"></span>
+    </label>
+    <h1>Hobbies</h1>
+    <!-- Insert Header Name -->
+  </div>
+  <!-- Middle Container -->
+  <div class="middle-container">
+    <div class="skill-row">
+      <img class="scrum-img dark--hidden" src="images/dice-light.png" alt="scrum-img">
+      <img class="scrum-img light--hidden" src="images/dice-dark.png" alt="scrum-img">
+
+      <h3>"You mean like, Monopoly? Or Clue?" -Most People</h3>
+      <p>I have recently been lured into the world of board games (let's face it, someone showed me like two games and I fell in love). My collection is growing and I have definitely gone all in.
+         I find myself buying the organizers and spending hours sanding/staining them, but I love when the base set box accomodates expansions.  Some of my favorite board games include: 7 wonders Duel, Valeria Card Kingdoms, and Clank!</p>
+
+      <p>I would love to venture into Table Top RPG's and have amassed waaaaay too many source books. I'm most excited by DND 5e,
+        Pendragon, and Legend of the Five Rings. I enjoy painting minis and have really enjoyed building model buildings and terrain. It's safe to say I have a pile of minis and projects to paint at any given moment.</p>
+    </div>
+
+    <div class="skill-row">
+      <img class="code-img dark--hidden" src="images/game-light.png" alt="coding-img">
+      <img class="code-img light--hidden" src="images/game-dark.png" alt="coding-img">
+
+      <h3>"Never tell me the odds!"- Han Solo, <em>Empire Strikes Back</em></h3>
+      <p>I guess you could say I am a nerd.</p>
+      <p>I love video games (Dark Souls, Bloodborne, Mass Effect). I love Star Wars (I accept the superiority of the Original Trilogy, but I'm filled with prequel memes). I adore the MCU, The Lord of the Rings, and even delving into comic books. I'm a fan of Image comics (Saga, Descender, Spawn), and generally prefer Marvel
+        (X-men, Deadpool, Spiderman) over DC (I have a fondness for Batman).</p>
+      <!-- INSERT Link to EJS page detailing server  -->
+    </div>
+    <div class="skill-row hobbie-buffer">
+      <img class="scrum-img dark--hidden" src="images/paint-light.png" alt="scrum-img">
+      <img class="scrum-img light--hidden" src="images/paint-dark.png" alt="coding-img">
+      <h3>Art</h3>
+      <p> I was fortunate in my life to have been surrounded by art and artistic people from a very young age. I have fond memories as a child drawing, painting, and learning how to make pottery from clay. Learning how to tie dye, sew, and explore life through the lens of art.
+      I can usually be found having several projects going at once in various mediums as well. My favorites are acrylic on canvas or board, pen and ink, and watercolor.  </p>
+      <p>One of my favorite projects was a massive landscape painting on a 4ft x 5ft canvas. It's included in the portfolio below.</p>
+    <div class="image-container">
+      <!-- Full-width images with number text -->
+      <div class="image-row">
+        <div class="image-column">
+          <img src="artImages/GroguCanvas.jpg">
+          <img src="artImages/MandoCanvas.jpg">
+          <img src="artImages/PanelDeathStar.jpg">
+          <img src="artImages/FettPen.jpg">
+          <img src="artImages/SpiderManPen.jpg">
+          <img src="artImages/SpawnPen.jpg">
+          <img src="artImages/DeadpoolMarker.jpg">
+
+        </div>
+        <div class="image-column">
+          <img src="artImages/DeadpoolWater.jpg">
+          <img src="artImages/DeadpoolPen.jpg">
+          <img src="artImages/ThanosWater.jpg">
+          <img src="artImages/HydraWater.jpg">
+          <img src="artImages/LokiWater.jpg">
+          <img src="artImages/WinterSoldierWater.jpg">
+
+        </div>
+        <div class="image-column">
+          <img src="artImages/BatmanWater.jpg">
+          <img src="artImages/BatmanPanel.jpg">
+          <img src="artImages/BatmanJokerPanel.jpg">
+          <img src="artImages/AquamanPen.jpg">
+          <img src="artImages/MetalWater.jpg">
+          <img src="artImages/MetalPanel.jpg">
+          <img src="artImages/Landscape.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="sub-title last-hr">
+  </div>
+
+  <!-- Contact Container -->
+  <div class="contact-me">
+    <h2 class="sub-title">Get In Touch</h2>
+    <div class="skill-row">
+
+      <a class="dark--hidden" href="mailto:karlee.lewis010@gmail.com"><img class="code-img" src="images/contactme-light.png" alt="Contact Me"></a>
+      <a class="light--hidden" href="mailto:karlee.lewis010@gmail.com"><img class="code-img" src="images/contactme.png" alt="Contact Me"></a>
+      <h3>I am currently looking for a junior developer role</h3>
+      <p class="contact-message">If you feel like I'd be a good fit for your team, please don't hesitate to reach out. I'm willing and capable of learning new technologies and programming languages. I fully expect to spend time learning the code stack and filling any gaps in knowledge to better contribute to a team. While
+        I may not have explicit software developer experience in the professional sense, I am confident that I could contribute to an agile team in a relatively short period of time. <a href="mailto:karlee.lewis010@gmail.com">Contact me. </a> </p>
+    </div>
+  </div>
+  <!-- Bottom Container -->
+  <div class="bottom-container">
+    <a class="footer-link" href="mailto:karlee.lewis010@gmail.com">Contact Me</a>
+    <!-- href="/files/resume.pdf" download="KarleeLewisResume.pdf" -->
+    <a class="footer-link" href="#">Download Resume</a>
+    <a class="footer-link" href="https://github.com/Karlee-lewis">Github</a>
+    <a class="footer-link" href="https://www.linkedin.com/in/karlee-lewis-385086198/">LinkedIn</a>
+    <a class="footer-link" href="index.html">Home</a>
+    <p class="copyright">© 2021 Karlee Lewis.</p>
+  </div>
+  <script src="persona.js" charset="utf-8"></script>
+</body>
+
+</html>

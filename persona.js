@@ -15,3 +15,5 @@ const toggleColorButtons = document.querySelectorAll(".mode-toggle-btn");
 toggleColorButtons.forEach(btn => {
   btn.addEventListener("input", toggleColorMode);
 });
+
+// Gallery Scripts
