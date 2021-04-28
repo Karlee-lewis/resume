@@ -64,6 +64,7 @@ h1 {
 
 .sub-title {
   color: #66bfbf;
+  margin-top: 30px;
 }
 
 h2 {
@@ -77,6 +78,7 @@ h2 {
 h3 {
   color: var(--text-base);
   font-family: 'Montserrat', sans-serif;
+  padding-bottom: 15px;
 }
 
 h4 {
@@ -265,6 +267,7 @@ p {
 .skill-row {
   width: 50%;
   margin: 100px auto 100px auto;
+  padding-bottom: 50px;
   text-align: left;
 }
 
@@ -303,83 +306,47 @@ p {
   width: auto;
 }
 
+.last-hr {
+  margin-bottom: 0;
+}
+
 /*************Hobbies Page**************/
 .image-container {
   position: relative;
-  background-color: var(--middle-theme);
   color: var(--text-base);
-  padding: 50px 0 100px;
+  padding: 150px 0 100px;
   width: auto;
 }
 
-.my-slides {
-  display: none;
+.hobbie-buffer {
+  padding: 100px 0 0;
+}
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.cursor {
-  cursor: pointer;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: fixed;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: #FFF;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  left: 0;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.gallery {
-  width: 70%;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: #FFF;
-}
-
-.image-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* Create 3 equal columns that sits next to each other */
 .image-column {
-  float: left;
-  width: 16.66%;
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
 }
 
-.demo {
-  opacity: 0.6;
+.image-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .image-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
