@@ -306,6 +306,11 @@ p {
   width: auto;
 }
 
+.lighta {
+  color: #fbaccc;
+  font-weight: bold;
+}
+
 .last-hr {
   margin-bottom: 0;
 }
