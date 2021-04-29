@@ -210,12 +210,14 @@ p {
   border-radius: 100%;
   width: 30%;
   margin-right: 30px;
+
   padding-bottom: 30px;
 }
 
 .about-me {
   color: var(--text-base);
   text-align: left;
+  padding-bottom: 20px;
 }
 
 .intro {
