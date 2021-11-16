@@ -111,8 +111,7 @@ p {
 
 /********** Mode Toggle Button ***********/
 .toggle-control {
-  display: block;
-  position: absolute;
+  float: right;
   right: 17%;
   top: 7%;
   padding-left: 100px;
@@ -123,10 +122,12 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 1;
+    position: sticky;
 }
 
 .toggle-control input {
-  position: absolute;
+  position: sticky;
   opacity: 0;
   cursor: pointer;
   height: 0;
@@ -134,7 +135,7 @@ p {
 }
 
 .toggle-control input:checked~.control {
-  background-color: #fbaccc;
+  background-color: #66bfbf;
 }
 
 .toggle-control input:checked~.control:after {
@@ -273,13 +274,13 @@ p {
   text-align: left;
 }
 
-.code-img {
+.left-img {
   width: 25%;
   float: left;
   margin-right: 30px;
 }
 
-.scrum-img {
+.right-img {
   width: 25%;
   float: right;
   margin-left: 30px;
@@ -347,7 +348,8 @@ p {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 300px){
+  .view-port {
+    width: 100%;
+  }
+}
