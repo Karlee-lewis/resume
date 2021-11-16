@@ -123,7 +123,7 @@ p {
   -ms-user-select: none;
   user-select: none;
   z-index: -1;
-    position: sticky;
+  position: sticky;
 }
 
 .toggle-control input {
